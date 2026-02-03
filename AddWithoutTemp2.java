@@ -1,14 +1,13 @@
-class AddWithoutTemp2 {
+class SwapWithoutTemp2 {
     public static void main(String[] args) {
-        int a = 10;
-        int b = 20;
+        int a = 5;
+        int b = 10;
 
-        while (b != 0) {
-            int carry = a & b;
-            a = a ^ b;
-            b = carry << 1;
-        }
+        a = a * b;
+        b = a / b;
+        a = a / b;
 
-        System.out.println("Sum = " + a);
+        System.out.println("a = " + a);
+        System.out.println("b = " + b);
     }
 }
